@@ -1,9 +1,9 @@
 # Week One
 
-## Principiples of Analytics Graphics
+## Principles of Analytics Graphics
 
 
-### Principles
+#### Principles
 1. Principle 1: Show Comparisons
   * Evidence for a hypothesis is always relative to another competing hypothesis.
   * Always ask, compared to what?
