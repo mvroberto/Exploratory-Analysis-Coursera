@@ -82,3 +82,41 @@ One dimesion:
   * Let you summarice the data and highlight broad features
   * Exlore basic questions and hypotheses
   * Suggest modeling strategies for next steps
+
+## Plotting Systems
+
+R has three main plotting systems:
+
+#### Base plotting System
+ * "Artist's Pallete" model
+ * Start with blank canvas build from there
+ * Start with plot function or similar
+ * Use annotation functions to add/modify (text, lines, points, axis)
+
+Details
+
+* Convinient, mirrors how we think of building plots and analyzing data
+* Can't go back once plot has started (ie, to adjust margins); need to plan in advance
+* Difficult to "tranlate" to others once a new plot has been created (no graphical "language")
+* Plot is just a series of R commands
+* You need to control everything
+
+
+#### The Lattice system
+* Plots are created with a single function call (xyploy, bwplot, etc)
+* Most useful for confitioning types of plots: Looking at how y changes with x across levels of z
+* Things like margins/spacing set automatically because entire plot is specified at once
+* Good for putting many plots on the screen
+
+#### The ggplot2 System
+
+* Splits the difference between base and lattice in a number of ways
+* Automatically deals with spacing, text, titles but also allows you to annotate by " adding" to a plot
+* Superficial similarity to lattice but generally easier/more intuitive use\
+* Default mode makes many choices for you ( but can still customize)
+
+
+#### Summary
+* Base: "artist's pallete" model
+* Lattice: Entire plot specified by one fucntion; conditioning
+* ggplot2: Mixes elements of Base and Lattice
