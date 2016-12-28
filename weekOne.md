@@ -120,3 +120,16 @@ Details
 * Base: "artist's pallete" model
 * Lattice: Entire plot specified by one fucntion; conditioning
 * ggplot2: Mixes elements of Base and Lattice
+
+
+#### Base Plotting systems in R
+
+The core plotting and grpahical engine in R is encapsulated in the following packages:
+
+* graphics: contaings plotting functions for the "base" graphic systems, including plot, hist, boxplot and many mores
+* grDevices: contaings all the code implementing the various graphics devices, including X11, PDF, PostScript, PNG , etc...
+
+The lattice plotting system is implemented using the following packages:
+
+* lattice: contaings code for producting Trellis graphics, which are independent of the "base" graphics system. includes functions like xyplot, bwplot, levelplot
+* grid: Implements a different graphing system independent of the "base" system; the lattice package builds on top of grid; we seldom call functions form the rid package directly
