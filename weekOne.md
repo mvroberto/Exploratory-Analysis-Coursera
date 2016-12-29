@@ -65,6 +65,7 @@ One dimesion:
    
 #### Multiple Boxplots
  * Boxplot -- boxplot(drat  ~  cyl, data = cars, col ="red")
+ *  boxplot(Ozone ~ Month, airquality, xlab = "Month", ylab = "Ozone (ppq)")
 
 #### Mutiple Histograms
  *  Check
@@ -177,3 +178,14 @@ Many base plotting functions share a set of parametes. Here are few key ones:
 * col: the plotting, specified as a number, string, or hex code; the colors() function gives you a vector of colors by name
 * xlab: character string for the x-axis label
 * ylab: character string on the y-axis label
+
+The par() function is used to specify global graphics parameters that affect all plots in an R session. These parameters can be overridden when specified as arguments to specific plotting functions:
+
+* las: the orientation of the axis labels on the plot
+* bg: the background colot
+* mar: the margin
+* oma: the outer margin size*default is 0 for all sides)
+* nfrow: number of plots per row, column ( plots are filled row-wise)
+* mfcol: number of plots pero row, column (plots are filled column-wise)
+
+par("lty")
