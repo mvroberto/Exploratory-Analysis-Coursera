@@ -189,3 +189,21 @@ The par() function is used to specify global graphics parameters that affect all
 * mfcol: number of plots pero row, column (plots are filled column-wise)
 
 par("lty")
+
+
+### Base plotting Functions
+ * plot: makes a scatterplot, or other type of plot depending on the class of the object being plot
+ * lines: add lines to a plot, given a vector x values and a corresponding vector of y values (or a 2-column matrix); this function just connects the dots
+ * points: add points to a plot
+ * add text to a plot using especified x,y coordinates
+ * title: add notations to x, y axis labels, title, subtitle, outer margin
+ * mtext: add arbitrary text to the margings (inner, outer) of the plot
+ * axis: adding axis ticks/labes
+ 
+ ##### Summary
+ * Plots in the base plotting system are created by calling succesive R functions to "build up" a plot
+ * Plotting occurs in two stages:
+   * Creation of a plot
+   * Annotation of a plot (adding lines, points, text, legends)
+ * The base plotting system is very flexible and offers a high degree of control over plotting
+ 
