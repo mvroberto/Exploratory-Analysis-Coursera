@@ -247,10 +247,10 @@ The decond approach to plotting is most commonly used for file devices"
 3. Annote plot if necessary
 4. Excplicity close grphic device with dev.off() (this is very important!)
 
-'''R
+```R
 pdf(file = "myplot.pdf")
 with(faithdul,plot(eruptions,waiting)
 title(main = "Old Faithful Geyser Data")
 dev.off()
-'''
+```
 
