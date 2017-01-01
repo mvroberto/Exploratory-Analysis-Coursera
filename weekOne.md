@@ -276,4 +276,4 @@ Vector Format
   * Plotting can only occur on one graphics device at a time
   * The currently active graphic device can be found by calling dev.cur()
   * Every open graphic device is assigned an interger ≥ 2.
-  * You can change the active grpahics device with dev.set(<interger>) where **interger** is the number associated with the graphics device you want to switch to.
+  * You can change the active grpahics device with dev.set(**interger**) where **interger** is the number associated with the graphics device you want to switch to.
