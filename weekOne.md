@@ -289,5 +289,5 @@ pdf(file = "myplot.pdf")
 with(faithdul,plot(eruptions,waiting)
 title(main = "Old Faithful Geyser Data")
 dev.copy(png, file = "geyserplot.png")
-dev.off()
+dev.off() ### Don't forget to close the PNG device
 ```
