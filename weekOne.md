@@ -254,3 +254,26 @@ title(main = "Old Faithful Geyser Data")
 dev.off()
 ```
 
+#### Graphic File Devices
+
+There are two basic types of file devices" **vector** and **bitmap** devices
+
+Vector Format
+ * pdf: Usefel for line-type graphics, resizes well, ususally portable
+ * svg: XML - based scalable vector graphics; supports animation and interactivity, potentially useful for web-based plots
+ * win.metafile: Windows metafile format
+ * postscript: older format, also resizes wel, usuatlly portable
+ 
+ Bitmap formats:
+ 
+ * PNG: bitmapped format, good for line drawing or images with solid colors, uses lossless compression, most web browsers can read this format natively, good for plotting many many points, does not resize well
+ * jpeg: good for fotographs or natural scenes, uses lossy compression, good for plotting many many points, does not resize well, can be read by alsmost any computer and any web broser, not great for line drawing
+ * tiff: Creates bitmap files on TIFF format; supports lossless compression
+ * BMP: a native Windows bitmapped format (commonly used for icons)
+ 
+ **Multiple Open Graphic Devices**
+  * It is possilbe to open multiple graphic devices (screen, file, or both), for example when viewing multiple plots at once
+  * Plotting can only occur on one graphics device at a time
+  * The currently active graphic device can be found by calling dev.cur()
+  * Every open graphic device is assigned an interger ≥ 2.
+  * You can change the active grpahics device with dev.set(<interger>) where **interger** is the number associated with the graphics device you want to switch to.
