@@ -299,3 +299,4 @@ dev.off() ### Don't forget to close the PNG device
    * Vector formats are good for line drawing and plots with solid colors using a modest number of points
    * Bitmap formats are good for plors with a large number of points, natural scenes or web-based plots
    
+ [Simpsons Paradox](https://en.wikipedia.org/wiki/Simpson's_paradox)
