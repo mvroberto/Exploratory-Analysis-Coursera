@@ -233,7 +233,7 @@ par("lty")
   * Not all grpahic devices are available in all platforms
 
 
-#### How DOes a lpot Gets Created
+#### How Does a plot Gets Created
 
 There are two basig approaches to plotting, The first is most common (Screen Device):
 1. Call a plotting fucntion like plot, xyplot or qpot
