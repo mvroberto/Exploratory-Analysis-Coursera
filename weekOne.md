@@ -277,3 +277,17 @@ Vector Format
   * The currently active graphic device can be found by calling dev.cur()
   * Every open graphic device is assigned an interger ≥ 2.
   * You can change the active grpahics device with dev.set(**interger**) where **interger** is the number associated with the graphics device you want to switch to.
+
+#### Copy Plots form one device to another
+
+Copying a plot to another device be useful becauase some plots require a lot of code and it can be a pain to type all that in a again for a different device.
+ * dev.copy: copy a plot from one device to another
+ * dev.copy2pdf: specifically copy a plot to a PDF file
+ 
+ ```R
+pdf(file = "myplot.pdf")
+with(faithdul,plot(eruptions,waiting)
+title(main = "Old Faithful Geyser Data")
+dev.copy(png, file = "geyserplot.png")
+dev.off()
+```
