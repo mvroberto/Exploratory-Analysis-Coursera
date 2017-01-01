@@ -291,3 +291,11 @@ title(main = "Old Faithful Geyser Data")
 dev.copy(png, file = "geyserplot.png")
 dev.off() ### Don't forget to close the PNG device
 ```
+####  Summary
+ * Plots must be created on a graphic device
+ * The default graphic device is almost always the screen device, which is most usefil for exploratory analysis
+ * File devices are useful for creating plots that can be included in other documents or sent to other people
+ * For file devices, there are vector and bitmap formats
+   * Vector formats are good for line drawing and plots with solid colors using a modest number of points
+   * Bitmap formats are good for plors with a large number of points, natural scenes or web-based plots
+   
