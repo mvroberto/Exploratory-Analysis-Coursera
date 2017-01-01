@@ -231,3 +231,26 @@ par("lty")
  For plots that may be printed out or be incorporated into a document, (e.g. papers/reports, slide presentations), usually a file device is more appropiate
   * The are many different file devices to choose from
   * Not all grpahic devices are available in all platforms
+
+
+#### How DOes a lpot Gets Created
+
+There are two basig approaches to plotting, The first is most common (Screen Device):
+1. Call a plotting fucntion like plot, xyplot or qpot
+2. The plot appears on the screen device
+3. Annotate plot if necessary
+4. Use
+
+The decond approach to plotting is most commonly used for file devices"
+1. Explicitly Launch a grapchics device
+2. Call a plotting function to make a plot (Note: if you are using a file device, no plot will appear on the screen)
+3. Annote plot if necessary
+4. Excplicity close grphic device with dev.off() (this is very important!)
+
+'''R
+pdf(file = "myplot.pdf")
+with(faithdul,plot(eruptions,waiting)
+title(main = "Old Faithful Geyser Data")
+dev.off()
+'''
+
