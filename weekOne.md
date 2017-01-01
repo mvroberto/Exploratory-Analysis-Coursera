@@ -207,3 +207,27 @@ par("lty")
    * Annotation of a plot (adding lines, points, text, legends)
  * The base plotting system is very flexible and offers a high degree of control over plotting
  
+#### Graphics Devices
+
+ * A graphic device is something where you can make a plot appear
+  * A window on your computer (screen device)
+  * A PDF file (file device)
+  * A PNG or JPEG file (file device)
+  * A scalable vector graphic (SVG) file (file device)
+
+* When you make a plot in Rm it has to be "sent" to a specific graphic device
+* The most common place a plot is to be "sent" is the screen device
+ * On Mac the screen device is launched with the quartz()
+ * On Windoes the screen device is launched with windows()
+ * On Unix/Linux the screen device is launched with x11()
+ 
+ When making a plot, you need to consider how the plot will be used to detemine what device plot should be sent to
+  * The list of device is found in ?Devices; there are also devices created by users on CRAN
+ 
+ For quick visualization and exploratoty analyisis, usually you want to use the screen device
+  * fucntions like plot in base, xyplot in lattice, or qplot in ggplot2 will default sending a plot to the screen
+  * On a given platform (Mac, Windows, Unix/Linux) there is only one screen device
+  
+ For plots that may be printed out or be incorporated into a document, (e.g. papers/reports, slide presentations), usually a file device is more appropiate
+  * The are many different file devices to choose from
+  * Not all grpahic devices are available in all platforms
