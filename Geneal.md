@@ -1,4 +1,4 @@
-#### (Hierarchical Clustering) [http://en.wikipedia.org/wiki/Hierarchical_clustering]
+#### [Hierarchical Clustering] (http://en.wikipedia.org/wiki/Hierarchical_clustering)
 
 
 Euclidean distance is what you learned about in high school algebra. Given two points on a plane, (x1,y1) and (x2,y2), the Euclidean
