@@ -5,3 +5,6 @@ Euclidean distance is what you learned about in high school algebra. Given two p
 distance is the square root of the sums of the squares of the distances between the two x-coordinates (x1-x2) and the two
 y-coordinates (y1-y2). You probably recognize this as an application of the Pythagorean theorem which yields the length of the
  hypotenuse of a right triangle.
+
+ In this case, we can use __Manhattan__ or city block distance (also known as a taxicab metric). This picture, copied from
+| http://en.wikipedia.org/wiki/Taxicab_geometry, shows what this means. More formally, Manhattan distance is the sum of the absolute values of the distances between each coordinate, so the distance between the points (x1,y1) and (x2,y2) is |x1-x2|+|y1-y2|. As with Euclidean distance, this too generalizes to more than 2 dimensions.
