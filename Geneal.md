@@ -10,6 +10,18 @@ y-coordinates (y1-y2). You probably recognize this as an application of the Pyth
 | http://en.wikipedia.org/wiki/Taxicab_geometry, shows what this means. More formally, Manhattan distance is the sum of the absolute values of the distances between each coordinate, so the distance between the points (x1,y1) and (x2,y2) is |x1-x2|+|y1-y2|. As with Euclidean distance, this too generalizes to more than 2 dimensions.
 
 
+dist()
+plot(as.dendrogram(hc))
+ hc < hclust(distxy)
+ 
+ There are several ways to do this. We'll just mention two. The first is called complete linkage and it says that if you're trying to measure a
+| distance between two clusters, take the greatest distance between the pairs of points in those two clusters. Obviously such pairs contain one point
+| from each cluster.
+
+The second way to measure a distance between two clusters that we'll just mention is called average linkage. First you compute an "average" point in
+| each cluster (think of it as the cluster's center of gravity). You do this by computing the mean (average) x and y coordinates of the points in the
+| cluster.
+
 
 #### K- means Clustering general
 
