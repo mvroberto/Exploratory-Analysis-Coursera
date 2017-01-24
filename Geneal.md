@@ -14,6 +14,8 @@ dist()
 plot(as.dendrogram(hc))
  hc < hclust(distxy)
  
+__kmeans()__
+
  There are several ways to do this. We'll just mention two. The first is called complete linkage and it says that if you're trying to measure a
 | distance between two clusters, take the greatest distance between the pairs of points in those two clusters. Obviously such pairs contain one point
 | from each cluster.
@@ -22,6 +24,10 @@ The second way to measure a distance between two clusters that we'll just mentio
 | each cluster (think of it as the cluster's center of gravity). You do this by computing the mean (average) x and y coordinates of the points in the
 | cluster.
 
+ We won't say too much on this topic, but a very nice concise tutorial on creating heatmaps in R exists at
+| http://sebastianraschka.com/Articles/heatmaps_in_r.html#clustering. Here's an image from the tutorial to start you thinking about the topic. It
+| shows a sample heat map with a dendrogram on the left edge mapping the relationship between the rows. The legend at the top shows how colors relate
+| to values.
 
 #### K- means Clustering general
 
