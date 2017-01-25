@@ -44,3 +44,22 @@ The second way to measure a distance between two clusters that we'll just mentio
   * Final Estimate of cluster Centroids
   * An Asignment of each porint to clusters
   
+  ### Principal Component analysis, Singular value Decomposition
+  PCA and SVD are used in both the exploratory phase and the more formal modelling stage of analysis. We'll focus on the exploratory phase and briefly touch on some of the underlying theory.
+  
+   As data scientists, we'd like to find a smaller set of multivariate variables that are uncorrelated AND
+| explain as much variance (or variability) of the data as possible. This is a statistical approach.
+ In other words, we'd like to find the best matrix created with fewer variables (that is, a lower rank
+| matrix) that explains the original data. This is related to data compression.
+ Two related solutions to these problems are PCA which stands for Principal Component Analysis and SVD,
+| Singular Value Decomposition. This latter simply means that we express a matrix X of observations (rows) and
+| variables (columns) as the product of 3 other matrices, i.e., X=UDV^t. This last term (V^t) represents the
+| transpose of the matrix V.
+
+
+svd()
+
+#### Pricipal component analyisis
+ Now we'll talk a little about PCA, Principal Component Analysis, "a simple, non-parametric method for
+| extracting relevant information from confusing data sets." We're quoting here from a very nice concise paper
+| on this subject which can be found at http://arxiv.org/pdf/1404.1100.pdf. The paper by Jonathon Shlens of Google Research is called, A Tutorial on Principal Component Analysis.
