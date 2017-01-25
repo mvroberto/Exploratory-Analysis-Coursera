@@ -63,3 +63,26 @@ svd()
  Now we'll talk a little about PCA, Principal Component Analysis, "a simple, non-parametric method for
 | extracting relevant information from confusing data sets." We're quoting here from a very nice concise paper
 | on this subject which can be found at http://arxiv.org/pdf/1404.1100.pdf. The paper by Jonathon Shlens of Google Research is called, A Tutorial on Principal Component Analysis.
+
+| We'll demonstrate this now. First we have to scale mat, our simple example data matrix.  This means that we
+| subtract the column mean from every element and divide the result by the column standard deviation. Of
+| course R has a command, scale, that does this for you. Run svd on scale of mat.
+
+svd(scale(mat))
+prcomp(scale(mat))
+
+| Now you're probably convinced that SVD and PCA are pretty cool and useful as tools for analysis, but one
+| problem with them that you should be aware of, is that they cannot deal with MISSING data. Neither of them
+| will work if any data in the matrix is missing. (You'll get error messages from R in red if you try.)
+| Missing data is not unusual, so luckily we have ways to work around this problem. One we'll just mention is
+| called imputing the data.
+This uses the k nearest neighbors to calculate a values to use in place of the missing data. You may want to
+| specify an integer k which indicates how many neighbors you want to average to create this replacement
+| value. The bioconductor package (http://bioconductor.org) has an impute package which you can use to fill in
+| missing data. One specific function in it is impute.knn.
+
+| We'll close now with a few comments. First, when reducing dimensions you have to pay attention to the scales
+| on which different variables are measured and make sure that all your data is in consistent units. In other
+| words, scales of your data matter. Second, principal components and singular values may mix real patterns,
+| as we saw in our simple 2-pattern example, so finding and separating out the real patterns require some
+| detective work. Let's do a quick review now.
